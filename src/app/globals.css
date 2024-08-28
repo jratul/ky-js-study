@@ -14,3 +14,12 @@ img {
 *:hover {
   outline: none;
 }
+
+a:hover {
+  text-decoration: underline;
+}
+
+.title {
+  font-size: xx-large;
+  font-weight: bold;
+}

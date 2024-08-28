@@ -4,11 +4,15 @@ const NavItems = [
     items: [
       {
         name: "개요",
-        href: "#",
+        href: "/string/intro",
       },
       {
         name: "기본",
         href: "#",
+      },
+      {
+        name: "substring",
+        href: "/string/substring",
       },
     ],
   },

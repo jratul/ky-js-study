@@ -22,10 +22,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" className={`${pretendard.variable}`}>
-      <body className="font-pretendard w-6xl grid grid-cols-8">
-        <Nav />
-        <div className="col-span-3"></div>
-        {children}
+      <body className="font-pretendard w-6xl lg:grid lg:grid-cols-4 gap-5">
+        <div className="lg:col-span-1">
+          <Nav />
+        </div>
+        <div className="pt-20 lg:pt-10 lg:col-span-3 p-5">{children}</div>
       </body>
     </html>
   );
