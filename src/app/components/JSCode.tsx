@@ -5,7 +5,7 @@ import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 export default function JSCode({ code }: { code: string }) {
   return (
-    <div>
+    <div className="mb-5">
       <Prism
         language="javascript"
         style={vscDarkPlus}
