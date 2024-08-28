@@ -26,6 +26,10 @@ const navItems = [
             name: "우선순위 큐",
             href: "/ps/data-structure/priority-queue",
           },
+          {
+            name: "그래프",
+            href: "/ps/data-structure/graph",
+          },
         ],
       },
     ],
