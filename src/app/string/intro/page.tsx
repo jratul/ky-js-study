@@ -7,7 +7,7 @@ const text = `function solution(message) {
 export default function StringIntro() {
   return (
     <div>
-      <div className="title">문자열 개요</div>
+      <h1>문자열 개요</h1>
       <JSCode code={text} />
     </div>
   );

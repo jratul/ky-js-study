@@ -1,7 +1,7 @@
 export default function StringSubString() {
   return (
     <div>
-      <div className="title">substring</div>
+      <h1>substring</h1>
     </div>
   );
 }
