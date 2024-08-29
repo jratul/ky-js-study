@@ -29,7 +29,7 @@ export default function Nav() {
         </button>
       </div>
       <div
-        className={`fixed lg:p-5 inset-y-0 left-0 transform ${
+        className={`fixed overflow-y-auto lg:p-5 inset-y-0 left-0 transform ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform lg:translate-x-0 bg-white w-64 lg:w-1/6`}
       >
