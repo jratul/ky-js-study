@@ -271,6 +271,36 @@ const navItems = [
           },
         ],
       },
+      {
+        title: "탐색",
+        items: [
+          {
+            name: "이진 탐색",
+            href: "/ps/search/binary",
+          },
+        ],
+      },
+      {
+        title: "Sort",
+        items: [
+          {
+            name: "Quick Sort",
+            href: "/ps/sort/quick",
+          },
+          {
+            name: "Merge Sort",
+            href: "/ps/sort/merge",
+          },
+          {
+            name: "k-th smallest",
+            href: "/ps/sort/kth",
+          },
+          {
+            name: "counting flips",
+            href: "/ps/sort/flip",
+          },
+        ],
+      },
     ],
   },
   {
@@ -320,6 +350,15 @@ const navItems = [
           {
             name: "개요",
             href: "/javascript/set/intro",
+          },
+        ],
+      },
+      {
+        title: "Map",
+        items: [
+          {
+            name: "map 순회",
+            href: "/javascript/map/iter",
           },
         ],
       },
