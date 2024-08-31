@@ -269,6 +269,10 @@ const navItems = [
             name: "그래프",
             href: "/ps/data-structure/graph",
           },
+          {
+            name: "링크드 리스트",
+            href: "/ps/data-structure/linked-list",
+          },
         ],
       },
       {
