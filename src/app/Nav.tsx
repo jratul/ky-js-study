@@ -14,12 +14,13 @@ import {
   XMarkIcon,
 } from "@heroicons/react/20/solid";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <>
-      <div className="p-5 fixed lg:hidden">
+      <div className="fixed lg:hidden p-5">
         <button
           onClick={() => {
             setIsOpen(true);
@@ -40,28 +41,28 @@ export default function Nav() {
           <XMarkIcon className="w-10 h-10" />
         </button>
         <br />
-        <a href="/" className="m-1">
+        <Link href="/" className="m-1">
           Home
-        </a>
+        </Link>
         {navItems.map((navGroup) => (
           <Disclosure
             key={navGroup.group}
             as="div"
-            className="border-t border-gray-200 pt-1"
+            className="border-gray-200 pt-1 border-t"
             defaultOpen={true}
           >
-            <DisclosureButton className="group flex w-full items-center justify-between bg-slate-300 px-2 py-1">
-              <span className="text-lg font-bold text-gray-900">
+            <DisclosureButton className="flex justify-between items-center bg-slate-300 px-2 py-1 w-full group">
+              <span className="font-bold text-gray-900 text-lg">
                 {navGroup.group}
               </span>
-              <span className="ml-6 flex items-center">
+              <span className="flex items-center ml-6">
                 <PlusIcon
                   aria-hidden="true"
-                  className="h-5 w-5 group-data-[open]:hidden"
+                  className="group-data-[open]:hidden w-5 h-5"
                 />
                 <MinusIcon
                   aria-hidden="true"
-                  className="h-5 w-5 [.group:not([data-open])_&]:hidden"
+                  className="[.group:not([data-open])_&]:hidden w-5 h-5"
                 />
               </span>
             </DisclosureButton>
@@ -71,21 +72,21 @@ export default function Nav() {
                   <Disclosure
                     key={navItem.title}
                     as="div"
-                    className="border-t border-gray-200 py-1"
+                    className="border-gray-200 py-1 border-t"
                     defaultOpen={true}
                   >
-                    <DisclosureButton className="group flex w-full items-center justify-between bg-white px-2 py-2">
+                    <DisclosureButton className="flex justify-between items-center bg-white px-2 py-2 w-full group">
                       <span className="font-semibold text-gray-900">
                         {navItem.title}
                       </span>
-                      <span className="ml-6 flex items-center">
+                      <span className="flex items-center ml-6">
                         <PlusIcon
                           aria-hidden="true"
-                          className="h-5 w-5 group-data-[open]:hidden"
+                          className="group-data-[open]:hidden w-5 h-5"
                         />
                         <MinusIcon
                           aria-hidden="true"
-                          className="h-5 w-5 [.group:not([data-open])_&]:hidden"
+                          className="[.group:not([data-open])_&]:hidden w-5 h-5"
                         />
                       </span>
                     </DisclosureButton>
@@ -94,7 +95,7 @@ export default function Nav() {
                       <div className="space-y-1">
                         {navItem.items.map((item) => (
                           <div className="items-center ml-5" key={item.name}>
-                            <a href={item.href}>{item.name}</a>
+                            <Link href={item.href}>{item.name}</Link>
                           </div>
                         ))}
                       </div>
